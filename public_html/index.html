@@ -1,0 +1,782 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Dra. Jamile Andraus | Especialista em Plástica Ocular e Blefaroplastia
+    </title>
+
+    <!-- Playfair Display, Inter & Poppins -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- AOS - Animate On Scroll Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <!-- Tailwind (protótipo) -->
+    <script src="/lib/tailwindcss/cdn.js"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          fontFamily: {
+            serif: ["Playfair Display", "serif"],
+            sans: ["Inter", "sans-serif"],
+            florensans: ["Florensans", "serif"],
+            poppins: ["Poppins", "sans-serif"],
+          },
+          extend: {
+            colors: {
+              brown: "#A68877",
+              gray: "#8D8D8D",
+              darkGray: "#4D4D4D",
+              beige: "#D9CCC5",
+              lightBeige: "#F2ECE9",
+            },
+          },
+        },
+      };
+    </script>
+
+    <style>
+      @font-face {
+        font-family: "Florensans";
+        src: url("./fonts/Florensans.otf") format("opentype");
+        font-weight: normal;
+        font-style: normal;
+        font-display: swap;
+      }
+
+      body {
+        background: #f2ece9;
+      }
+      /* Smooth scrolling */
+      html {
+        scroll-behavior: smooth;
+      }
+      /* Button hover effects */
+      button {
+        cursor: pointer;
+      }
+      /* Smooth AOS animations */
+      [data-aos] {
+        transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+      }
+      /* Prevent layout shift during animations */
+      [data-aos] {
+        will-change: transform, opacity;
+      }
+    </style>
+  </head>
+
+  <body class="font-sans text-[#131313] antialiased">
+    
+    <!-- HERO SECTION -->
+    <section class="bg-lightBeige lg:max-h-[680px] lg:overflow-hidden">
+      <div
+        class="grid grid-cols-1 gap-8 lg:grid-cols-2 lg:items-center lg:gap-12 lg:h-full"
+      >
+        <!-- Left Content - 50% -->
+        <div
+          class="flex flex-col items-center justify-center space-y-6 px-4 sm:pl-16 sm:pr-1"
+        >
+          <div class="flex flex-col items-start justify-center w-full">
+            <img
+              src="./images/logo.png"
+              alt="Dra. Jamile Andraus"
+              class="h-8 sm:h-12 w-auto mt-8 sm:mt-16"
+              data-aos="fade-down"
+              data-aos-duration="600"
+            />
+
+            <div
+              class="flex flex-col items-start justify-center space-y-4 pt-12 pb-8 sm:pt-32 sm:pb-32 w-full"
+            >
+              <h1
+                class="text-darkGray font-florensans text-[40px] sm:text-[48px] font-normal leading-[1.1] text-darkGray"
+                data-aos="fade-up"
+                data-aos-delay="100"
+              >
+                REJUVENESÇA O SEU OLHAR COM NATURALIDADE
+              </h1>
+              <p
+                class="font-poppins text-base font-normal text-darkGray md:text-lg pb-4"
+                data-aos="fade-up"
+                data-aos-delay="200"
+              >
+                Com a <span class="font-bold italic">Dra. Jamile Andraus</span> -
+                Especialista em Plástica Ocular
+              </p>
+              <a
+                href="https://wa.me/5562997008838?text=Ol%C3%A1%20Dra.%20Jamile%20Andraus"
+                target="_blank"
+                rel="noreferrer"
+                class="w-full sm:w-fit border-[3px] rounded-xl border-brown bg-transparent px-6 sm:px-10 py-3 sm:py-4 font-semibold text-brown transition-all hover:bg-brown hover:text-white"
+                data-aos="fade-up"
+                data-aos-delay="300"
+              >
+                AGENDE UMA AVALIAÇÃO
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- Right Image - 50% -->
+        <div
+          class="flex h-[400px] sm:h-full w-full items-center justify-center bg-red-500 lg:max-h-[680px] lg:overflow-hidden"
+          data-aos="fade"
+          data-aos-delay="300"
+          data-aos-duration="1400"
+          data-aos-easing="ease-out-cubic"
+        >
+          <img
+            src="./images/hero.jpg"
+            alt="Dra. Jamile Andraus"
+            class="h-full w-full object-cover lg:max-h-[680px]"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- DEVOLVA LEVEZA SECTION -->
+    <section class="bg-white py-16 md:py-32">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="flex flex-col-reverse sm:flex-row sm:grid grid-cols-1 gap-8 lg:grid-cols-12 lg:items-center lg:gap-12">
+          <!-- Left Image -->
+          <div class="w-full lg:col-span-7" data-aos="fade-right" data-aos-duration="1400" data-aos-easing="ease-out-cubic">
+            <img
+              src="./images/olhos.png"
+              alt="Antes e depois - Blefaroplastia"
+              class="h-full w-full object-cover"
+            />
+          </div>
+          <!-- Right Content -->
+          <div class="space-y-6 lg:col-span-5" data-aos="fade-left" data-aos-duration="1400" data-aos-easing="ease-out-cubic" data-aos-delay="200">
+            <h2
+              class="font-poppins text-xl sm:text-2xl font-semibold text-left sm:text-justify leading-tight md:text-3xl text-darkGray"
+            >
+              DEVOLVA LEVEZA, HARMONIA E VITALIDADE AO SEU OLHAR
+            </h2>
+            <div class="space-y-4 text-base leading-relaxed md:text-lg">
+              <p class="font-poppins font-normal text-darkGray text-justify">
+                Com o passar do tempo, é natural que a pele das pálpebras perca
+                firmeza, provocando excesso de pele e bolsas de gordura que dão
+                ao rosto uma expressão de cansaço.
+              </p>
+              <p class="font-poppins font-normal text-darkGray">
+                A blefaroplastia é uma cirurgia delicada que corrige esses
+                sinais, sem alterar sua identidade facial.
+              </p>
+              <p class="font-poppins font-normal text-darkGray">
+                O resultado é um olhar mais leve, jovem e natural, em harmonia
+                com o restante do rosto.
+              </p>
+              <p class="font-poppins font-bold text-darkGray">
+                Atendimento em ambiente seguro, com técnica refinada e
+                acompanhamento personalizado.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- QUOTE SECTION -->
+    <section class="bg-lightBeige py-16 md:py-24">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 gap-12 lg:grid-cols-2 lg:items-center">
+          <!-- Left Content -->
+          <div class="space-y-8" data-aos="fade-right" data-aos-duration="1400" data-aos-easing="ease-out-cubic">
+            <div class="space-y-6">
+              <img
+                src="./images/aspas.png"
+                alt="Aspas"
+                class="h-auto w-auto"
+                data-aos="fade-in"
+                data-aos-delay="150"
+                data-aos-duration="1000"
+                data-aos-easing="ease-out-cubic"
+              />
+              <blockquote
+                class="font-florensans text-[26px] sm:text-[34px] font-medium text-[#131313] leading-tight sm:leading-[44px] text-darkGray tracking-[1px] sm:tracking-[2px]"
+                data-aos="fade-up"
+                data-aos-delay="300"
+                data-aos-duration="1200"
+                data-aos-easing="ease-out-cubic"
+              >
+                MAIS DO QUE REMOVER O EXCESSO DE PELE, MEU OBJETIVO É REALÇAR A
+                BELEZA DO OLHAR, MANTENDO A AUTENTICIDADE E O EQUILÍBRIO DO
+                ROSTO.
+              </blockquote>
+            </div>
+            <div class="space-y-2" data-aos="fade-up" data-aos-delay="450" data-aos-duration="1200" data-aos-easing="ease-out-cubic">
+              <p class="font-sans text-xm font-bold text-darkGray font-poppins">
+                DRA. <span class="font-florensans italic text-lg">JAMILE ANDRAUS</span>
+              </p>
+              <p class="font-sans text-base font-normal text-gray">
+                Médica oftalmologista com atuação voltada à saúde dos olhos e à
+                região periocular, a Dra. Jamile Andraus une precisão técnica,
+                sensibilidade estética e olhar humano.
+              </p>
+            </div>
+            <a
+              href="https://wa.me/5562997008838?text=Ol%C3%A1%20Dra.%20Jamile%20Andraus"
+              target="_blank"
+              rel="noreferrer"
+              class="w-full sm:w-fit rounded-xl bg-beige px-6 sm:px-10 py-3 sm:py-4 font-semibold text-darkGray hover:text-white hover:bg-brown transition-all hover:bg-opacity-90 hover:shadow-lg"
+              data-aos="fade-up"
+              data-aos-delay="600"
+              data-aos-duration="1200"
+              data-aos-easing="ease-out-cubic"
+            >
+              FALE COM A DRA. JAMILE NO WHATSAPP
+            </a>
+          </div>
+          <!-- Right Image -->
+          <div class="h-[400px] sm:h-[500px] lg:h-auto w-full" data-aos="fade" data-aos-duration="1400" data-aos-easing="ease-out-cubic" data-aos-delay="200">
+            <img
+              src="./images/doutora.png"
+              alt="Dra. Jamile Andraus"
+              class="h-full w-full object-cover"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- INDICAÇÕES SECTION -->
+    <section class="bg-white py-16 md:py-24">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <h2
+          class="mb-8 sm:mb-12 text-center font-florensans text-2xl sm:text-3xl font-bold uppercase tracking-wide text-darkGray md:text-4xl"
+          data-aos="fade-up"
+          data-aos-duration="1200"
+          data-aos-easing="ease-out-cubic"
+        >
+          INDICAÇÕES DA BLEFAROPLASTIA
+        </h2>
+        <div class="grid grid-cols-1 sm:gap-6 md:grid-cols-2 md:gap-8">
+          <!-- Left Column -->
+          <div class="flex flex-col" data-aos="fade-right" data-aos-delay="150" data-aos-duration="1200" data-aos-easing="ease-out-cubic">
+            <div class="flex min-h-[85px] py-2 w-full items-center border-b border-t border-gray/40" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000" data-aos-easing="ease-out-cubic">
+              <p class="font-poppins text-sm sm:text-base font-normal leading-relaxed text-darkGray px-4 sm:px-6 md:text-lg">
+                Excesso de pele nas pálpebras superiores ou inferiores
+              </p>
+            </div>
+            <div class="flex min-h-[85px] py-2 w-full items-center border-b border-gray/40" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000" data-aos-easing="ease-out-cubic">
+              <p class="font-poppins text-sm sm:text-base font-normal leading-relaxed text-darkGray px-4 sm:px-6 md:text-lg">
+                Bolsas de gordura que deixam o olhar inchado ou cansado
+              </p>
+            </div>
+            <div class="flex min-h-[85px] py-2 w-full items-center border-b border-gray/40" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000" data-aos-easing="ease-out-cubic">
+              <p class="font-poppins text-sm sm:text-base font-normal leading-relaxed text-darkGray px-4 sm:px-6 md:text-lg">
+                Flacidez palpebral que altera a expressão facial
+              </p>
+            </div>
+          </div>
+          <!-- Right Column -->
+          <div class="flex flex-col" data-aos="fade-left" data-aos-delay="150" data-aos-duration="1200" data-aos-easing="ease-out-cubic">
+            <div class="flex min-h-[85px] py-2 sm:pb-2 w-full items-center border-b sm:border-t border-gray/40" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000" data-aos-easing="ease-out-cubic">
+              <p class="font-poppins text-sm sm:text-base font-normal leading-relaxed text-darkGray px-4 sm:px-6 md:text-lg">
+                Ptose (queda) das pálpebras
+              </p>
+            </div>
+            <div class="flex min-h-[85px] py-2 w-full items-center border-b border-gray/40" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000" data-aos-easing="ease-out-cubic">
+              <p class="font-poppins text-sm sm:text-base font-normal leading-relaxed text-darkGray px-4 sm:px-6 md:text-lg">
+                Desejo de rejuvenescimento natural e duradouro
+              </p>
+            </div>
+            <div class="flex min-h-[85px] py-2 w-full items-center border-b border-gray/40" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000" data-aos-easing="ease-out-cubic">
+              <p class="font-poppins text-sm sm:text-base font-normal leading-relaxed text-darkGray px-4 sm:px-6 md:text-lg">
+                Superior, inferior ou completa, conforme a necessidade de cada
+                paciente.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="mt-8 text-center">
+          <a
+            href="https://wa.me/5562997008838?text=Ol%C3%A1%20Dra.%20Jamile%20Andraus"
+            target="_blank"
+            rel="noreferrer"
+            class="w-full sm:w-fit rounded-xl bg-beige px-6 sm:px-10 py-3 sm:py-4 font-semibold text-darkGray hover:text-white hover:bg-brown transition-all hover:bg-opacity-90 hover:shadow-lg"
+            data-aos="fade-up"
+            data-aos-delay="600"
+            data-aos-duration="1200"
+            data-aos-easing="ease-out-cubic"
+          >
+            FALE COM A DRA. JAMILE NO WHATSAPP
+          </a>
+        </div>
+        </div>
+
+        <!-- Image between sections -->
+        <div class="mt-16 h-[100px] sm:h-[300px] lg:h-[490px] w-full bg-beige" data-aos="zoom-out" data-aos-delay="300" data-aos-duration="1400" data-aos-easing="ease-out-cubic">
+          <img src="./images/olhos-detalhes.png" alt="Linhas de corte" class="h-full w-full object-cover">
+        </div>
+      </div>
+    </section>
+
+    <!-- BENEFÍCIOS SECTION -->
+    <section class="bg-white pb-16 md:pb-36">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <h2
+          class="mb-8 sm:mb-12 text-center font-florensans text-2xl sm:text-3xl font-bold uppercase tracking-wide text-darkGray md:text-4xl"
+          data-aos="fade-up"
+          data-aos-duration="1200"
+          data-aos-easing="ease-out-cubic"
+        >
+          BENEFÍCIOS DO PROCEDIMENTO
+        </h2>
+        <div class="grid grid-cols-1 sm:gap-6 md:grid-cols-2 md:gap-8">
+          <!-- Left Column -->
+          <div class="flex flex-col" data-aos="fade-right" data-aos-delay="150" data-aos-duration="1200" data-aos-easing="ease-out-cubic">
+            <div class="flex min-h-[85px] py-2 w-full items-center border-b border-t border-gray/40" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000" data-aos-easing="ease-out-cubic">
+              <p class="font-poppins text-sm sm:text-base font-normal leading-relaxed text-darkGray px-4 sm:px-6 md:text-lg">
+                Rejuvenescimento do olhar sem alterar os traços
+              </p>
+            </div>
+            <div class="flex min-h-[85px] py-2 w-full items-center border-b border-gray/40" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000" data-aos-easing="ease-out-cubic">
+              <p class="font-poppins text-sm sm:text-base font-normal leading-relaxed text-darkGray px-4 sm:px-6 md:text-lg">
+                Expressão mais leve, natural e descansada
+              </p>
+            </div>
+            <div class="flex min-h-[85px] py-2 w-full items-center border-b border-gray/40" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000" data-aos-easing="ease-out-cubic">
+              <p class="font-poppins text-sm sm:text-base font-normal leading-relaxed text-darkGray px-4 sm:px-6 md:text-lg">
+                Melhora estética e funcional das pálpebras
+              </p>
+            </div>
+          </div>
+          <!-- Right Column -->
+          <div class="flex flex-col" data-aos="fade-left" data-aos-delay="150" data-aos-duration="1200" data-aos-easing="ease-out-cubic">
+            <div class="flex min-h-[85px] py-2 w-full items-center border-b sm:border-t border-gray/40" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000" data-aos-easing="ease-out-cubic">
+              <p class="font-poppins text-sm sm:text-base font-normal leading-relaxed text-darkGray px-4 sm:px-6 md:text-lg">
+                Recuperação tranquila e resultados duradouros
+              </p>
+            </div>
+            <div class="flex min-h-[85px] py-2 w-full items-center border-b border-gray/40" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000" data-aos-easing="ease-out-cubic">
+              <p class="font-poppins text-sm sm:text-base font-normal leading-relaxed text-darkGray px-4 sm:px-6 md:text-lg">
+                Rejuvenescimento natural e duradouro
+              </p>
+            </div>
+            <div class="flex min-h-[85px] py-2 w-full items-center border-b border-gray/40" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000" data-aos-easing="ease-out-cubic">
+              <p class="font-poppins text-sm sm:text-base font-normal leading-relaxed text-darkGray px-4 sm:px-6 md:text-lg">
+                Técnica segura e precisa, conduzida por especialista em plástica ocular
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="mt-12 text-center">
+          <a
+            href="https://wa.me/5562997008838?text=Ol%C3%A1%20Dra.%20Jamile%20Andraus"
+            target="_blank"
+            rel="noreferrer"
+            class="w-full sm:w-fit rounded-xl border-[3px] border-gray/30 bg-white px-6 sm:px-10 py-3 sm:py-4 font-semibold text-darkGray transition-all hover:bg-brown hover:text-white hover:shadow-lg"
+            data-aos="fade-up"
+            data-aos-delay="600"
+            data-aos-duration="1200"
+            data-aos-easing="ease-out-cubic"
+          >
+            AGENDAR AVALIAÇÃO PELO WHATSAPP
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- DOCTOR PROFILE/CONTACT SECTION -->
+    <section class="bg-lightBeige">
+      <div class="grid grid-cols-1 gap-8 lg:grid-cols-2 lg:items-center lg:gap-12 bg-brown">
+        <!-- Left Image - 50% -->
+        <div class="flex h-[400px] sm:h-[500px] lg:h-full w-full items-center justify-center" data-aos="fade" data-aos-duration="1400" data-aos-easing="ease-out-cubic">
+          <img
+            src="./images/sobre-doutora.jpg"
+            alt="Dra. Jamile Andraus"
+            class="h-full w-full object-cover"
+          />
+        </div>
+        <!-- Right Content - 50% -->
+        <div class="flex flex-col items-start justify-center space-y-6 bg-brown px-4 sm:px-8 lg:px-16 py-8 sm:py-12 lg:py-16 text-white" data-aos="fade-left" data-aos-duration="1400" data-aos-easing="ease-out-cubic" data-aos-delay="200">
+          <div class="flex flex-col items-start justify-center">
+            <p class="font-florensans text-2xl sm:text-3xl font-bold">
+              <span class="block sm:inline text-[18px] sm:text-3xl">DRA. </span><span class="block sm:inline">JAMILE ANDRAUS GERAISSATE</span>
+            </p>
+            <p class="font-sans text-base sm:text-lg mb-6 sm:mb-8 italic font-bold">
+              Médica Oftalmologista - Especialista em Plástica Ocular
+            </p>
+            <div class="space-y-3 sm:space-y-4 font-sans text-sm sm:text-base font-normal mb-6 sm:mb-8">
+              <p>
+                Residência Médica em Oftalmologia - Hospital Fundação Banco de
+                Olhos de Goiás (FUBOG)
+              </p>
+              <p>
+                Fellowship em Plástica Ocular - Centro de Referência em
+                Oftalmologia (CEROF / UFG)
+              </p>
+              <p>
+                Curso de Ciências Básicas em Oftalmologia - UNIFESP
+              </p>
+              <p>Curso Teórico-Prático de Ptose Palpebral - USP</p>
+              <p>
+                Título de Especialista em Oftalmologia pela Associação Médica
+                Brasileira e Conselho Brasileiro de Oftalmologia
+              </p>
+              <p>
+                Membro efetivo da Sociedade Brasileira de Cirurgia Plástica
+                Ocular (SBCPO)
+              </p>
+            </div>
+            <a
+              href="https://wa.me/5562997008838?text=Ol%C3%A1%20Dra.%20Jamile%20Andraus"
+              target="_blank"
+              rel="noreferrer"
+              class="mt-4 w-full sm:w-fit rounded-xl border-[3px] border-beige hover:border-gray/50 bg-brown px-6 sm:px-10 py-3 sm:py-4 font-semibold text-white transition-all hover:bg-lightBeige hover:text-darkGray hover:bg-opacity-90 hover:shadow-lg"
+            >
+              AGENDAR AVALIAÇÃO PELO WHATSAPP
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS SECTION -->
+    <section class="bg-white py-16 md:py-24">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <h2
+          class="mb-8 sm:mb-12 text-center font-florensans text-2xl sm:text-3xl font-bold uppercase text-darkGray md:text-4xl"
+          data-aos="fade-up"
+          data-aos-duration="1200"
+          data-aos-easing="ease-out-cubic"
+        >
+          DEPOIMENTOS
+        </h2>
+        <div class="grid grid-cols-1 gap-8 md:grid-cols-3">
+          <!-- Testimonial 1 -->
+          <div class="flex flex-col bg-white p-4 sm:p-6" data-aos="fade-up" data-aos-delay="150" data-aos-duration="1200" data-aos-easing="ease-out-cubic">
+            <p class="mb-4 font-poppins text-sm sm:text-base font-normal leading-relaxed text-darkGray">
+              Fiz minha blefaroplastia há 6 meses e estou simplesmente encantada com o resultado. Sempre me incomodaram as pálpebras caídas e as bolsas nos olhos, parecia que eu estava sempre cansada, mesmo descansando bem. Depois da cirurgia, meu olhar ganhou uma nova vida, mais leve, mais aberto e com um ar super natural. O pós-operatório foi tranquilo, a Dra. Jamile me acompanhou de perto e me senti muito acolhida em cada etapa. Hoje me olho no espelho e finalmente me reconheço de novo, só que mais jovem, confiante e feliz. Foi uma das melhores decisões que já tomei na vida. Recomendo de coração essa profissional competente, empática e muito profissional. Eu faria tudo de novo.
+            </p>
+            <div class="flex items-center gap-3">
+              <div class="h-12 w-12 rounded-full bg-beige flex items-center justify-center text-sm font-semibold text-darkGray">
+                V
+              </div>
+              <div class="flex flex-col">
+                <p class="font-poppins text-sm font-normal text-darkGray">
+                  VGS
+                </p>
+                <div class="flex items-center gap-1">
+                  <span class="font-poppins text-sm font-normal text-darkGray"
+                    >5,0</span
+                  >
+                  <svg
+                    class="h-4 w-4 text-yellow-400"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                  >
+                    <path
+                      d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Testimonial 2 -->
+          <div class="flex flex-col bg-white p-4 sm:p-6" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1200" data-aos-easing="ease-out-cubic">
+            <p class="mb-4 font-poppins text-sm sm:text-base font-normal leading-relaxed text-darkGray">
+              Dra Jamile além de excelente profissional é uma pessoa muito atenciosa, cuidadosa e humana. Graças a Deus ela é minha médica dos olhos e do olhar.
+            </p>
+            <div class="flex items-center gap-3">
+              <div class="h-12 w-12 rounded-full bg-beige flex items-center justify-center text-sm font-semibold text-darkGray">
+                R
+              </div>
+              <div class="flex flex-col">
+                <p class="font-poppins text-sm font-normal text-darkGray">
+                  Rosangela FPB Machado
+                </p>
+                <div class="flex items-center gap-1">
+                  <span class="font-poppins text-sm font-normal text-darkGray"
+                    >5,0</span
+                  >
+                  <svg
+                    class="h-4 w-4 text-yellow-400"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                  >
+                    <path
+                      d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Testimonial 3 -->
+          <div class="flex flex-col bg-white p-4 sm:p-6" data-aos="fade-up" data-aos-delay="450" data-aos-duration="1200" data-aos-easing="ease-out-cubic">
+            <p class="mb-4 font-poppins text-sm sm:text-base font-normal leading-relaxed text-darkGray">
+              Dr Jamile foi a única pessoa na qual confiei p fazer a blefaroplastia, pela sua competência, experiência e por entender e respeitar o que cada mulher pretende com essa cirurgia.
+            </p>
+            <div class="flex items-center gap-3">
+              <div class="h-12 w-12 rounded-full bg-beige flex items-center justify-center text-sm font-semibold text-darkGray">
+                D
+              </div>
+              <div class="flex flex-col">
+                <p class="font-poppins text-sm font-normal text-darkGray">
+                  Daisy Lage
+                </p>
+                <div class="flex items-center gap-1">
+                  <span class="font-poppins text-sm font-normal text-darkGray"
+                    >5,0</span
+                  >
+                  <svg
+                    class="h-4 w-4 text-yellow-400"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                  >
+                    <path
+                      d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="mt-8 text-center">
+          <a
+            href="https://www.doctoralia.com.br/jamile-andraus-geraissate/oftalmologista/goiania#profile-reviews"
+            target="_blank"
+            rel="noreferrer"
+            class="inline-flex items-center justify-center w-full sm:w-fit rounded-xl border-[3px] border-gray/30 px-6 sm:px-10 py-3 sm:py-4 font-semibold text-darkGray transition-all hover:border-brown hover:bg-brown hover:text-white hover:shadow-lg"
+          >
+            VER MAIS DEPOIMENTOS
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- INSTAGRAM SECTION -->
+    <section class="bg-lightBeige py-16 md:py-24">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <h2
+          class="mb-8 sm:mb-12 text-center font-florensans text-2xl sm:text-3xl font-bold uppercase tracking-wide text-darkGray md:text-4xl"
+          data-aos="fade-up"
+          data-aos-duration="1200"
+          data-aos-easing="ease-out-cubic"
+        >
+          INSTAGRAM
+        </h2>
+        <div class="grid grid-cols-2 gap-2 sm:gap-4 md:grid-cols-4">
+          <!-- Instagram Post 1 -->
+          <a href="https://www.instagram.com/drajamileandraus/" target="_blank" class="hover:scale-105 transition-all duration-300">
+          <div class="w-full overflow-hidden" data-aos="zoom-in" data-aos-delay="150" data-aos-duration="1200" data-aos-easing="ease-out-cubic">
+            <img
+              src="./images/insta1.png"
+              alt="Instagram Post 1"
+              class="h-full w-full object-cover"
+            />
+          </div>
+          </a>
+          <!-- Instagram Post 2 -->
+          <a href="https://www.instagram.com/drajamileandraus/" target="_blank" class="hover:scale-105 transition-all duration-300">
+          <div class="w-full overflow-hidden" data-aos="zoom-in" data-aos-delay="250" data-aos-duration="1200" data-aos-easing="ease-out-cubic">
+            <img
+              src="./images/insta2.png"
+              alt="Instagram Post 2"
+              class="h-full w-full object-cover"
+            />
+          </div>
+          </a>
+          <!-- Instagram Post 3 -->
+          <a href="https://www.instagram.com/drajamileandraus/" target="_blank" class="hover:scale-105 transition-all duration-300">
+          <div class="w-full overflow-hidden" data-aos="zoom-in" data-aos-delay="350" data-aos-duration="1200" data-aos-easing="ease-out-cubic">
+            <img
+              src="./images/insta3.png"
+              alt="Instagram Post 3"
+              class="h-full w-full object-cover"
+            />
+          </div>
+          </a>
+          <!-- Instagram Post 4 -->
+          <a href="https://www.instagram.com/drajamileandraus/" target="_blank" class="hover:scale-105 transition-all duration-300">
+          <div class="w-full overflow-hidden" data-aos="zoom-in" data-aos-delay="450" data-aos-duration="1200" data-aos-easing="ease-out-cubic">
+            <img
+              src="./images/insta4.png"
+              alt="Instagram Post 4"
+              class="h-full w-full object-cover"
+            />
+          </div>
+          </a>
+        </div>
+        <div class="mt-8 text-center">
+          <a
+            href="https://wa.me/5562997008838?text=Ol%C3%A1%20Dra.%20Jamile%20Andraus"
+            target="_blank"
+            rel="noreferrer"
+            class="w-full sm:w-fit rounded-xl bg-beige px-6 sm:px-10 py-3 sm:py-4 font-semibold text-darkGray hover:text-white hover:bg-brown transition-all hover:bg-opacity-90 hover:shadow-lg"
+            data-aos="fade-up"
+            data-aos-delay="600"
+            data-aos-duration="1200"
+            data-aos-easing="ease-out-cubic"
+          >
+            FALE COM A DRA. JAMILE NO WHATSAPP
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-brown py-8 sm:py-12 text-lightBeige">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 gap-6 sm:gap-8 md:grid-cols-12">
+          <!-- Left Column: Logo and Name -->
+          <div class="space-y-4 md:col-span-6" data-aos="fade-up" data-aos-delay="150" data-aos-duration="1200" data-aos-easing="ease-out-cubic">
+            <img
+              src="./images/logo-white.png"
+              alt="Dra. Jamile Andraus"
+              class="h-10 w-auto"
+            />
+          </div>
+
+          <!-- Middle Column: Localization -->
+          <div class="space-y-4 md:col-span-4" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1200" data-aos-easing="ease-out-cubic">
+            <p class="font-poppins text-lg font-bold uppercase text-lightBeige">
+              LOCALIZAÇÃO
+            </p>
+            <div class="space-y-4">
+              <div class="space-y-1">
+                <p class="font-poppins text-sm font-semibold text-lightBeige">
+                  CLÍNICA VALE OFTALMOLOGIA E DERMATOLOGIA
+                </p>
+                <p class="font-poppins text-sm font-normal text-lightBeige">
+                  Avenida Alberto Miguel, N°660, QD 59, Setor Campinas,
+                </p>
+                <p class="font-poppins text-sm font-normal text-lightBeige">
+                  Santa Campinas, Goiânia 74510-010
+                </p>
+              </div>
+              <div class="space-y-1">
+                <p class="font-poppins text-sm font-semibold text-lightBeige">
+                  CBCO HOSPITAL DE OLHOS
+                </p>
+                <p class="font-poppins text-sm font-normal text-lightBeige">
+                  AV. T-2, 401 - ST. BUENO, GOIÂNIA - GO, 74210-010
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column: Contact and Social -->
+          <div class="space-y-4 md:col-span-2" data-aos="fade-up" data-aos-delay="450" data-aos-duration="1200" data-aos-easing="ease-out-cubic">
+            <!-- Google Rating -->
+            <div class="flex items-center gap-2">
+              <img
+                src="./images/google.png"
+                alt="Google"
+                class="h-6 w-auto"
+              />
+              <span class="font-poppins text-sm font-normal text-lightBeige"
+                >5,0</span
+              >
+              <img
+                src="./images/estrelas.png"
+                alt="5 estrelas"
+                class="h-4 w-auto"
+              />
+            </div>
+
+            <!-- Phone -->
+            <div class="flex items-center gap-2">
+              <svg
+                class="h-5 w-5 text-lightBeige"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
+                />
+              </svg>
+              <p class="font-poppins text-sm font-normal text-lightBeige">
+                (62) 99700-8838
+              </p>
+            </div>
+
+            <!-- WhatsApp -->
+            <div class="flex items-center gap-2">
+              <svg
+                class="h-5 w-5 text-lightBeige"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"
+                />
+              </svg>
+              <p class="font-poppins text-sm font-normal text-lightBeige">
+                Prefere whatsapp?
+                <a href="https://wa.me/5562997008838" target="_blank" class="underline">Clique aqui</a>
+              </p>
+            </div>
+
+            <!-- Social Media Icons -->
+            <div class="flex items-center gap-4">
+              <a href="https://www.instagram.com/drajamileandraus" target="_blank" class="text-lightBeige hover:opacity-80">
+                <svg
+                  class="h-6 w-6"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"
+                  />
+                </svg>
+              </a>
+              <!-- <a href="#" class="text-lightBeige hover:opacity-80">
+                <svg
+                  class="h-6 w-6"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 5.079 3.158 9.417 7.618 11.162-.105-.949-.199-2.403.041-3.439.219-.937 1.406-5.957 1.406-5.957s-.359-.72-.359-1.781c0-1.663.967-2.911 2.168-2.911 1.024 0 1.518.769 1.518 1.688 0 1.029-.653 2.567-.992 3.992-.285 1.193.6 2.165 1.775 2.165 2.128 0 3.768-2.245 3.768-5.487 0-2.861-2.063-4.869-5.008-4.869-3.41 0-5.409 2.562-5.409 5.199 0 1.033.394 2.143.889 2.741.099.12.112.225.085.345-.09.375-.293 1.199-.334 1.363-.053.225-.172.271-.402.165-1.495-.69-2.433-2.878-2.433-4.646 0-3.776 2.748-7.252 7.92-7.252 4.158 0 7.392 2.967 7.392 6.923 0 4.135-2.607 7.462-6.233 7.462-1.214 0-2.357-.629-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24.009 12.017 24.009c6.624 0 11.99-5.367 11.99-11.988C24.007 5.367 18.641.001 12.017.001z"
+                  />
+                </svg>
+              </a> -->
+            </div>
+          </div>
+        </div>
+
+        <!-- Separator Line -->
+        <div class="my-8 border-t border-lightBeige/30"></div>
+
+        <!-- Copyright Section -->
+        <div class="text-center">
+          <p class="font-poppins text-sm font-normal text-lightBeige">
+            ©2025 Dra. Jamile Andraus Geraissate - CRM 14668 GO | RQE 13524
+          </p>
+          <p class="mt-2 font-poppins text-sm font-normal text-lightBeige">
+            Desenvolvido por
+            <a href="#" class="underline">Camila Costa</a> /
+            <a href="https://www.danilocaldas.com/" target="_blank" class="underline">Danilo Caldas</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- AOS - Animate On Scroll Library JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 800,
+        easing: 'ease-in-out',
+        once: true,
+        offset: 100,
+        delay: 0,
+      });
+    </script>
+  </body>
+</html>
